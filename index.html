@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Carteirinha</title>
+  </head>
+  <body>
+    <img id="arrowLeft" src="./img/arrowLeft.png" alt="Back" />
+    <div class="container">
+      <img
+        id="img"
+        src="img/foto-aluno.png"
+        alt="foto-aluno"
+        onclick="changeImage(img, src)"
+      />
+
+      <input id="nome" type="text" placeholder="Digite seu nome" />
+
+      <div class="dados">
+        <div class="dados2">
+          <div>
+            <p>CPF</p>
+            <input
+              type="text"
+              oninput="mascara(this)"
+              class="dados-direita"
+              placeholder="XXX.XXX.XXX-XX"
+            />
+            <p>Matrícula</p>
+            <input
+              type="text"
+              oninput="mascaraM(this)"
+              class="dados-direita"
+              placeholder="2022 0000 0000"
+            />
+          </div>
+
+          <div class="dados-d">
+            <p>Nascimento</p>
+            <input
+              type="text"
+              class="dados-direita"
+              placeholder="01 Abr 1999"
+            />
+            <p>Validade</p>
+            <input
+              type="text"
+              class="dados-direita"
+              placeholder="01 Abr 2023"
+            />
+          </div>
+        </div>
+
+        <p>Graduação (Ativo)</p>
+        <input class="dados-centro" type="text" placeholder="Administração  " />
+        <p>Campus</p>
+        <input
+          class="dados-centro"
+          type="text"
+          placeholder="Ex.: POLO BANGU - RJ"
+        />
+      </div>
+
+      <footer>
+        <img
+          id="logo"
+          src="./img/logo-estacio.png"
+          alt="logo-estacio"
+          onclick="alterarImagem()"
+        />
+      </footer>
+      <p>Válidade mediante apresentação do documento com foto</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

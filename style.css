@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+/* QRCode */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#arrowLeft {
+  background: #f8f8f8;
+  margin: 20px;
+  width: 25px;
+  cursor: pointer;
+}
+
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+  background-color: #f8f8f8;
+  font-weight: bold;
+}
+
+.container {
+  text-align: center;
+  width: 310px;
+  margin: 60px auto;
+}
+
+#img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: column;
+}
+
+#nome {
+  border: none;
+  width: 100%;
+  margin: 25px auto;
+  text-align: center;
+  font-size: 25px;
+  background: none;
+  padding-bottom: 30px;
+}
+
+#img:hover {
+  border: #c0bfc0 solid 2px;
+  transition: 400ms;
+}
+
+p {
+  display: flex;
+  color: #727272;
+}
+.dados {
+  color: #727272;
+  border: none;
+  display: column;
+}
+
+.dados-e {
+  width: 49%;
+  border: #c0bfc0 solid 2px;
+}
+
+.dados2 {
+  width: 49%;
+  display: flex;
+}
+
+.dados input {
+  font-weight: bold;
+}
+
+.dados-direita {
+  width: 150px;
+  margin: 10px;
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: 0;
+  margin-bottom: 30px;
+  padding-top: 2px;
+}
+.dados-centro {
+  border: none;
+  width: 100%;
+  margin: 10px;
+  background: none;
+  margin-left: 0;
+  margin-bottom: 30px;
+  padding-top: 2px;
+}
+p {
+}
+
+footer img {
+  cursor: pointer;
+}
