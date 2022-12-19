@@ -11,12 +11,12 @@
     <img id="arrowLeft" src="./img/arrowLeft.png" alt="Back" />
     <div class="container">
       <img
-        id="img"
+        id="foto"
         src="img/foto-aluno.png"
         alt="foto-aluno"
         onclick="changeImage(img, src)"
       />
-
+      <input type="file" id="file" name="fImage" accept="image/*" />
       <input id="nome" type="text" placeholder="Digite seu nome" />
 
       <div class="dados">
@@ -69,7 +69,7 @@
           id="logo"
           src="./img/logo-estacio.png"
           alt="logo-estacio"
-          onclick="alterarImagem()"
+          ondblclick="alterarImagem()"
         />
       </footer>
       <p>Válidade mediante apresentação do documento com foto</p>

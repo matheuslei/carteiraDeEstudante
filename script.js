@@ -36,3 +36,20 @@ function mascaraM(i) {
   if (v.length == 4 || v.length == 9) i.value += " ";
   if (v.length == 15) i.value += "-";
 }
+
+//trocar a foto
+let foto = document.getElementById("foto");
+let file = document.getElementById("file");
+
+foto.addEventListener("click", () => {
+  file.click();
+});
+
+file.addEventListener("change", (e) => {
+  let reader = new FileReader();
+
+  reader.onload = () => {
+    foto.src = reader.result;
+  };
+  reader.readAsDataURL(file.files[0]);
+});
