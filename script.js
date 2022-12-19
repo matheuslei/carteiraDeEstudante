@@ -53,3 +53,5 @@ file.addEventListener("change", (e) => {
   };
   reader.readAsDataURL(file.files[0]);
 });
+ console.log("Clique duas vezes na última imagem!!!");
+
